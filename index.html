@@ -1,99 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>TAKE THE BAIT</title>
-    <link rel="shortcut icon" href="https://i.ibb.co/HgKcx3Q/NTj-Cn-SY89h-Tl-GI9-L.jpg" type="image/x-icon" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <title>TAKE THE BAIT</title>
+        <link rel="shortcut icon" href="https://i.ibb.co/HgKcx3Q/NTj-Cn-SY89h-Tl-GI9-L.jpg" type="image/x-icon" />
     <style>
-        body, html {
-            height: 100%;
+        body {
+            background-color: #ffff32; /* Set background color */
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffff32; /* Change this color to match the image */
             font-family: 'Helvetica Neue', sans-serif;
             font-size: 18px;
         }
-        .image-container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            max-heigh: 100%;
-            overflow: hidden;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-        }
-        .spacer {
-            height: 20px; /* Adjust the height of the line break as needed */
+        .container {
             width: 100%;
-        }
-        .dexscreener-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            max-width: 100%;
-            overflow: hidden;
-        }
-        #dexscreener-embed {
-            position: relative;
-            width: 100%;
-            padding-bottom: 125%;
-        }
-        @media(min-width:1400px) {
-            #dexscreener-embed {
-                padding-bottom: 65%;
-            }
-        }
-        #dexscreener-embed iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            border: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .footer {
+            text-align: center;
+            padding: 20px;
             background-color: #000;
             color: white;
-            width: 100%;
-            text-align: center;
-            padding: 10px 0;
             position: fixed;
             bottom: 0;
+            width: 100%;
         }
         .footer a {
             color: white;
-            margin: 0 10px;
             text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <a href="https://dexscreener.com/solana/cjup4tn4uxseykothf4trl4stuwepqt2vam7ydgeg1fr" target="_blank">
-            <img src="https://i.ibb.co/185jDGg/hooktake-the-bait.png" alt="Central Image" height=100% width=100%>
-        </a>
-    </div>
-
-    <div class="spacer"></div>
-
-    <div class="dexscreener-container">
-        <div id="dexscreener-embed">
-            <iframe src="https://dexscreener.com/solana/AW4QJ5tvv6eaLymzoHbhzRzW5xNJ7D9Xepu2xENfxUDg?embed=1"></iframe>
+    <!-- About Page -->
+    <div id="about" class="container">
+        <div style="text-align: center;">
+            <img src="https://i.ibb.co/185jDGg/hooktake-the-bait.png" alt="About Photo" style="max-width: 100%; height: auto;">
         </div>
     </div>
 
+    <!-- Trade Page -->
+    <div id="trade" class="container">
+        <div>
+            <style>
+                #dexscreener-embed {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 125%;
+                }
+                @media (min-width: 1400px) {
+                    #dexscreener-embed {
+                        padding-bottom: 65%;
+                    }
+                }
+                #dexscreener-embed iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border: 0;
+                }
+            </style>
+            <div id="dexscreener-embed">
+                <iframe src="https://dexscreener.com/solana/AW4QJ5tvv6eaLymzoHbhzRzW5xNJ7D9Xepu2xENfxUDg?embed=1"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer">
         <a href="https://x.com/BAITTOKEN" target="_blank" class="fa-brands fa-x-twitter"><span class="label"><b>X ACCOUNT</b></span></a>
         <a href="https://t.me/+sQU_7pqkuJczODMx" target="_blank" class="fa-brands fa-telegram"><span class="label"><b>TELEGRAM</b></span></a>
