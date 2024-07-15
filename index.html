@@ -15,7 +15,7 @@
             align-items: center;
             background-color: #ffff32; /* Change this color to match the image */
             font-family: 'Helvetica Neue', sans-serif;
-            font-size: 18px
+            font-size: 18px;
         }
         .image-container {
             flex: 1;
@@ -23,11 +23,33 @@
             justify-content: center;
             align-items: center;
         }
-         .box1 {
+        .spacer {
+            height: 20px; /* Adjust the height of the line break as needed */
+            width: 100%;
+        }
+        .box1 {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        #dexscreener-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 125%;
+        }
+        @media(min-width:1400px) {
+            #dexscreener-embed {
+                padding-bottom: 65%;
+            }
+        }
+        #dexscreener-embed iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 0;
         }
         .footer {
             background-color: #000;
@@ -49,22 +71,21 @@
     </style>
 </head>
 <body>
-    
     <div class="image-container">
         <a href="https://dexscreener.com/solana/cjup4tn4uxseykothf4trl4stuwepqt2vam7ydgeg1fr" target="_blank">
             <img src="https://i.ibb.co/185jDGg/hooktake-the-bait.png" alt="Central Image" style="width:100%; height:100%;">
         </a>
     </div>
-
+    <div class="spacer"></div>
     <div class="box1">
-        <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/solana/AW4QJ5tvv6eaLymzoHbhzRzW5xNJ7D9Xepu2xENfxUDg?embed=1"></iframe></div>
+        <div id="dexscreener-embed">
+            <iframe src="https://dexscreener.com/solana/AW4QJ5tvv6eaLymzoHbhzRzW5xNJ7D9Xepu2xENfxUDg?embed=1"></iframe>
+        </div>
     </div>
-
     <div class="footer">
         <a href="https://x.com/BAITTOKEN" target="_blank" class="fa-brands fa-x-twitter"><span class="label"><b>X ACCOUNT</b></span></a>
         <a href="https://t.me/+sQU_7pqkuJczODMx" target="_blank" class="fa-brands fa-telegram"><span class="label"><b>TELEGRAM</b></span></a>
         <a href="https://dexscreener.com/solana/cjup4tn4uxseykothf4trl4stuwepqt2vam7ydgeg1fr" target="_blank" class="fa-brands fa-telegram"><span class="label"><b>MOONSHOT~CA</b></span></a>
     </div>
-    
 </body>
 </html>
